@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head>
+  <script src="p5.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div id="botonera">
+    <div class="coste">coste: <input type="text" id="txtvalor"> </div> <br>
+    <div class="rango">lado: <span id="valorlado"> 8px </span> <br> 
+      4<input type="range" min="4" max="15" value="8" oninput="document.getElementById('valorlado').innerHTML = this.value + 'px';" onchange="lado = this.value; RESET = true;">15</div>
+    <div class="rango">paredes: <span id="valorparedes"> 30% </span> <br> 
+      0%<input type="range" min="0" max="100" value="30" oninput="document.getElementById('valorparedes').innerHTML = this.value + '%';" onchange="percWall = this.value; RESET = true;">100%</div>
+    <br>
+    <button class="boton" onclick="RESET = true;">Reiniciar</button>
+  </div>
+  <script src="Cubo.js"></script>
+  <script src="Heap.js"></script>
+  <script src="sketch.js"></script>
+
+
+</body></html>

@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.rango, .boton, .coste {
+  margin: 2%;
+}
+
+.rango, .coste  {
+  width: 45%;
+  display: inline-block;
+}
+
+.rango input, .coste input {
+  width: 45%;
+}
